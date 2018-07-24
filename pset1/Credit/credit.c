@@ -11,9 +11,7 @@ int main()
         cardNumber = get_long_long("Number: ");
     }
     while (cardNumber < 0);
-
-    printf("AMEX\n");
-
+    
     if ((cardNumber / 100000000000000) < 1)
     {
         printf("INVALID\n");
