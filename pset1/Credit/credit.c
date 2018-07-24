@@ -4,7 +4,7 @@
 int main()
 {
     long cardNumber;
-    int n1, n2, n3, n4, n5, n6, n7, n8, /* n9, n10, n11, n12, n13, n14, */ nT;
+    int n1, n2, n3, n4, n5, n6, n7, n8, nT;
 
     do
     {
@@ -21,19 +21,12 @@ int main()
     else
     {
         n1 = ((cardNumber / 10) % 10) * 2;
-        printf("n1, %i\n", n1);
         n2 = ((cardNumber / 1000) % 10) * 2;
-        printf("n2, %i\n", n2);
         n3 = ((cardNumber / 100000) % 10) * 2;
-        printf("n3, %i\n", n3);
         n4 = ((cardNumber / 10000000) % 10) * 2;
-        printf("n4, %i\n", n4);
         n5 = ((cardNumber / 1000000000) % 10) * 2;
-        printf("n5, %i\n", n5);
         n6 = ((cardNumber / 100000000000) % 10) * 2;
-        printf("n6, %i\n", n6);
         n7 = ((cardNumber / 10000000000000) % 10) * 2;
-        printf("n7, %i\n", n7);
 
         if (n1 > 9) { n1 = (n1 / 10) + (n1 % 10); }
         if (n2 > 9) { n2 = (n2 / 10) + (n2 % 10); }
@@ -45,30 +38,16 @@ int main()
 
         nT = n1 + n2 + n3 + n4 + n5 + n6 + n7;
 
-        printf("nT, %i\n", nT);
-
-            //test 378282246310005
-
         n1 = ((cardNumber / 1) % 10);
-        printf("n1, %i\n", n1);
         n2 = ((cardNumber / 100) % 10);
-        printf("n2, %i\n", n2);
         n3 = ((cardNumber / 10000) % 10);
-        printf("n3, %i\n", n3);
         n4 = ((cardNumber / 1000000) % 10);
-        printf("n4, %i\n", n4);
         n5 = ((cardNumber / 100000000) % 10);
-        printf("n5, %i\n", n5);
         n6 = ((cardNumber / 10000000000) % 10);
-        printf("n6, %i\n", n6);
         n7 = ((cardNumber / 1000000000000) % 10);
-        printf("n7, %i\n", n7);
         n8 = ((cardNumber / 100000000000000) % 10);
-        printf("n8, %i\n", n8);
 
         nT = nT + n1 + n2 + n3 + n4 + n5 + n6 + n7 + n8;
-
-        printf("nT, %i\n", nT);
 
         if ((nT % 10) != 0)
         {
